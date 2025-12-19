@@ -17,9 +17,7 @@ This folder contains regional derivatives of the [Protomaps Basemap](https://doc
 The regional derivatives were created out of convience to allow those running Project NOMAD locally to select and download smaller sections of the full-featured basemap (120GB+) relevant to them. These derivatives were created using the [pmtiles extract](https://docs.protomaps.com/pmtiles/cli#extract) command and regional GeoJSON files (see below).
 
 ## geojson
-This folder contains the GeoJSON files used to specify the polygon(s) that `pmtiles` should extract to create the regional derivative(s).
+This folder contains the GeoJSON files used to specify the polygon(s) that `pmtiles` should extract to create the regional derivative(s). The GeoJSON boundaries for each state/territory are extracted from the U.S. Census Bureau's [TIGER/Line Shapefile](https://catalog.data.gov/dataset/tiger-line-shapefile-current-nation-u-s-state-and-equivalent-entities)
+using GeoPandas in the `convert_shapefile.py` script.
 
-- [California](https://data.ca.gov/dataset/california-state-boundary) [No restrictions on public use]
-- Global min - Extracted from the Protomaps Basemap using `maxzoom=3`
-- [Oregon](https://geohub.oregon.gov/datasets/oregon-state-boundary/about) [No restrictions on public use]
-- [Washington](https://geo.wa.gov/datasets/wadnr::wa-county-boundaries/about) [Custom, see washington.license.md]
+To run the converter, download and unzip the TIGER/Line Shapefile dataset and run `python convert_shapefile.py path_to_shp_file.shp [output_directory]`.
