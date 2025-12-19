@@ -21,3 +21,17 @@ This folder contains the GeoJSON files used to specify the polygon(s) that `pmti
 using GeoPandas in the `convert_shapefile.py` script.
 
 To run the converter, download and unzip the TIGER/Line Shapefile dataset and run `python convert_shapefile.py path_to_shp_file.shp [output_directory]`.
+
+## extract_states.sh
+Helper script to run the pmtiles cli `extract` command for all 50 U.S. states given the Protomaps Basemap and the GeoJSON boundaries for each state.
+
+## License
+Unless otherwise specified, the content of this repository shall be governed by the MIT license.
+
+Copyright 2025 Crosstalk Solutions, LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
